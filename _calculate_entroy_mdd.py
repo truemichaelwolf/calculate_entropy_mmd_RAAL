@@ -50,7 +50,7 @@ if __name__ == '__main__':
     file_paths = {file: os.path.join(base_dir, file) for file in os.listdir(base_dir) if file.endswith(".txt")}
 
 # Load SpaCy model
-nlp = spacy.load('en_core_web_md')
+nlp = spacy.load('en_core_web_trf')
 results = defaultdict(list)
 for k, v in file_paths.items():
     print(k)
